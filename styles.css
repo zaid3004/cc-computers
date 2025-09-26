@@ -10,13 +10,17 @@ body {
     height: 175px;
     padding: 6px 2px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    position: fixed;
+    z-index: 999;
 }
 /* left side of header */
 .header-left {
     height: 175px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 .header-left img {
@@ -29,6 +33,23 @@ body {
     font-family: cursive;
     font-size: large;
     font-weight: bold;
+}
+.header-options {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-left: 15px;
+}
+.header-options a {
+    text-decoration: underline;
+    color: #333;
+    font-weight: bold;
+}
+.logo-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
 }
 /* right side of header */
 .header-right {
