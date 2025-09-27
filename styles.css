@@ -1,7 +1,5 @@
 body {
-    background-image: url("CCC\ logo big.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #101;
 }
 /* header */
 .header {
@@ -14,6 +12,7 @@ body {
     justify-content: space-between;
     position: fixed;
     z-index: 999;
+    margin: -10px;
 }
 /* left side of header */
 .header-left {
@@ -39,6 +38,7 @@ body {
     flex-direction: row;
     gap: 15px;
     margin-left: 15px;
+    margin-top: 15px;
 }
 .header-options a {
     text-decoration: underline;
@@ -71,7 +71,7 @@ body {
 }
 .contact-button:hover {
     border: black solid 2px;
-    color: goldenrod;
+    background-color: goldenrod;
 }
 /* font awesome icons */
 .fa {
@@ -88,9 +88,57 @@ body {
 }
 .fa:hover {
     opacity: 0.7;
+    border: black solid 2px;
+    background-color: goldenrod;
 }
 .fa-twitter, .fa-instagram, .fa-whatsapp {
     background: gold;
     color: #000;
     margin-left: 3px;
+}
+/* main landing page sections */
+.main-page {
+    background-image: url("CCC\ logo big.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    margin: ;
+}
+.main-page-text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    top: 10px;
+    margin-bottom: -15px;
+}
+.main-page h1 {
+    color: goldenrod;
+    font-size: 250%;
+}
+.main-page h3 {
+    color: goldenrod;
+    font-size: 175%;
+}
+.main-page p {
+    color: darkgoldenrod;
+    font-size: 150%;
+}
+.main-page::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    filter: blur(1px);
+    pointer-events: none;
 }
